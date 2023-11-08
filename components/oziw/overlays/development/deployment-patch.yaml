@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: oziw
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - env:
+        - name: POC
+          value: POC
+        image: quay.io/redhat-appstudio-qe/byoc-jzop-tenant/byoc-app-wnhm/oziw@sha256:ce022aae1ee973d7b7b309b419546319ae100df252376fad56f44f7c63bf8c3f
+        name: my-java-quarkus
+        resources: {}
+status: {}
